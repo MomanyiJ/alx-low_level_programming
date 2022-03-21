@@ -7,25 +7,11 @@
  */
 int main(void)
 {
-	int c, i, k;
+	char n;
 
-	for (c = '0'; c <= '9'; c++)
+	for (n = '0'; n <= '9'; n++)
 	{
-	for (i = '0'; i <= '9'; i++)
-	{
-	for (k = '0'; k <= '9'; k++)
-	if (c < i && 1 < k)
-	{
-	putchar(c);
-	putchar(i);
-	putchar(k);
-	if (c != '7')
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	}
-	}
+		putchar(n);
 	}
 	putchar('\n');
 
