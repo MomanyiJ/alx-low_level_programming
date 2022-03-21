@@ -2,11 +2,9 @@
 #include <stdlib.h>
 
 /**
- *main - reads out alphabet in small letters
+ * main - Prints the alphabet in lowercase
  *
- *Description: prints small letters alphabet a-z
- *
- *return: Always (Success)
+ * Return: Always (Success)
  */
 
 
@@ -16,6 +14,7 @@ int main(void)
 
 	for (A = 'a'; A <= 'z'; A++)
 		putchar(A);
+
 	putchar ('\n');
 	return (0);
 
