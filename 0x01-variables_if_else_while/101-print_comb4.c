@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints combination of 3
+ * main - Prints combination of 3 numbers
  *
  * Return: Always (Success)
  */
@@ -11,11 +11,11 @@ int main(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (i = '0'; c <= '9'; i++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			for (k = '0'; i <= '9'; k++)
 			{
-				if (c, i && i < k)
+				if (c < i && i < k)
 				{
 					putchar(c);
 					putchar(i);
@@ -33,11 +33,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-
-
-
-
-
-
 }
-
