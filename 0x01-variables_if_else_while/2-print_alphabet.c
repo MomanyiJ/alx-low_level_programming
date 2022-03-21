@@ -6,7 +6,7 @@
  *
  *Description: prints small letters alphabet a-z
  *
- *return: 0
+ *return: Always (Success)
  */
 
 
