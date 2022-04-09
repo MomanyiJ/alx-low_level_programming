@@ -9,22 +9,24 @@
  */
 char *_strdup(char *str)
 {
+	char *new_malloc;
 	int i;
-	char *str1;
 
 	if (str == NULL)
 		return (NULL);
+	/* Allocating new space */
+	new_malloc = malloc(sizeof(str));
+	/*checking*/
 
-	for (i = 0; str[i]; i++)
-		;
-	i++;
-	str1 = malloc(sizeof(char) * i);
-
-	if (str1 == NULL)
+	if (new_malloc == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-		str1[i] = str[i];
 
-	str[i] = '\0';
-	return (str1);
+	/*copy the string*/
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		new_malloc[i] = str[i];
+	}
+	return (new_malloc);
+	free(new_malloc);
 }
