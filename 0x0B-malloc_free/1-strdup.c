@@ -10,12 +10,12 @@
 char *_strdup(char *str)
 {
 	char *new_malloc;
-	unsigned int i;
+	int i;
 
 	if (str == NULL)
 		return (NULL);
 	/* Allocating new space */
-	new_malloc = malloc(sizeof(str));
+	new_malloc = malloc(sizeof(str) + 1);
 	/*checking*/
 
 	if (new_malloc == NULL)
