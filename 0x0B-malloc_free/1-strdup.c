@@ -3,14 +3,14 @@
 
 /**
  * _strdup - allocate a string
- * @str: string
+ * @str: string to duplicate
  *
  * Return: pointer to string if success
  */
 char *_strdup(char *str)
 {
 	char *new_malloc;
-	int i;
+	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
@@ -28,5 +28,5 @@ char *_strdup(char *str)
 		new_malloc[i] = str[i];
 	}
 	return (new_malloc);
-	free(new_malloc);
+	free(new_malloc)
 }
