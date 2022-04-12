@@ -28,5 +28,5 @@ char *_strdup(char *str)
 		new_malloc[i] = str[i];
 	}
 	return (new_malloc);
-	free(new_malloc)
+	free(new_malloc);
 }
