@@ -1,6 +1,3 @@
-
-30 lines (27 sloc)  481 Bytes
-  
 #include "3-calc.h"
 
 /**
