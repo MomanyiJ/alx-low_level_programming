@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_square - prints square with #
- * @size: Determines the sizes of the square
- * Return: This function does not return any value
- */
+  * print_square - prints square with #
+  * @size: Determines the size of the square
+  * Return: This function does not return any value
+  */
 void print_square(int size)
 {
 	int i, j;
