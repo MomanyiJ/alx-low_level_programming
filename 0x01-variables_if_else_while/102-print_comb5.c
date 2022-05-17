@@ -1,30 +1,41 @@
 #include <stdio.h>
 
 /**
- * main - Prints combination of two digit numbers 00 to 99
- *
- * Return: Always (Success)
- */
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
-	int c, i;
+	int i, j, k, l, op1, op2;
 
-	for (c = '0'; c <= '9'; c++)
+	for (l = 48; l <= 57; l++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (k = 48; k <= 57; k++)
 		{
-			putchar(c);
-			putchar(i);
-
-			if ((c != '9') || (c == '9' && i != '9'))
+			for (j = 48; j <= 57; j++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (i = 48; i <= 57; i++)
+					{
+					op1 = (l * 10) + k;
+					op2 = (j * 10) + i;
+					if (op1 < op2)
+					{
+						putchar(l);
+						putchar(k);
+						putchar(' ');
+						putchar(j);
+						putchar(i);
+					if (l == 57 && k == 56 && j == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+				}
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
 

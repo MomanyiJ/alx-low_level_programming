@@ -2,35 +2,42 @@
 
 /**
  * main - Prints combination of 3 numbers
- *
+ * 
  * Return: Always (Success)
  */
 int main(void)
 {
-	int c, i, k;
+int i;
+	int j;
+	int k;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (k = '0'; i <= '9'; k++)
+			for (k = 48; k <= 57; k++)
 			{
-				if (c < i && i < k)
+				if (j != i && j != k && i != k && j < i && i < k)
 				{
-					putchar(c);
+					putchar(j);
 					putchar(i);
 					putchar(k);
-
-					if (c != '7')
+					if (i == 56 && j == 55 && k == 57)
 					{
-						putchar(',');
-						putchar(' ');
+						break;
 					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
+
+
+
+
+
 }
+
