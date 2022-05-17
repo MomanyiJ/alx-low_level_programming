@@ -7,27 +7,26 @@
  */
 int main(void)
 {
-	int A, i;
+int i;
+	int j = 0;
 
-	for (A = '0'; A <= '9'; A++)
+	/* Outer loop (Determines the number the first index is holding) */
+	for (i = 48; i <= 57; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		/* Inner loop (Determines the starting point of the 2nd number) */
+		for (j = i + 1; j <= 57; j++)
 		{
-			if (A < i)
+			putchar(i);
+			putchar(j);
+			/* Checking the last digit not to print a comma */
+			if (i != 56 || j != 57)
 			{
-				putchar(A);
-				putchar(i);
-
-				if (A != '8' || (A == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-		}
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
+
